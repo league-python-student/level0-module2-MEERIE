@@ -6,12 +6,13 @@ from PIL import ImageTk
 def onclick(args):
     # TODO 1) Run the program and play many rounds of Rock Paper Scissors.
     #  Does the computer always choose the same thing?
-
+    #  yes there is no randomization
     # TODO 2) Change the value of opponent_selection to be a random number
     #  between 1 and 3
-    opponent_selection = 1
+    opponent_selection = random.randint(1, 3)
 
     # TODO 3) Run the program again. Is the result different?
+    # YES IT IS
 
     selection = 1
 
