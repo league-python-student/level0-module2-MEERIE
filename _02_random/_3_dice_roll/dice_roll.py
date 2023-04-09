@@ -3,9 +3,9 @@ Use a Random object to generate random integers so your code can roll different
 numbers on a dice.
 """
 import tkinter as tk
-from PIL import Image, ImageTk
-import random
 
+import random
+import PIL
 
 def get_random_dice_image():
     random_image = None
@@ -41,9 +41,9 @@ def create_image(filename, width, height):
     image_obj = None
 
     try:
-        image = Image.open(filename)
-        image = image.resize((width, height), Image.ANTIALIAS)
-        image_obj = ImageTk.PhotoImage(image=image)
+        image = PIL.image.open(filename)
+        image = image.resize((width, height), PIL.Image.ANTIALIAS)
+        image_obj = PIL.ImageTk.PhotoImage(image=image)
     except FileNotFoundError as fnf:
         print("ERROR: Unable to find file " + filename)
 
