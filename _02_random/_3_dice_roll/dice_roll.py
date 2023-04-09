@@ -9,7 +9,7 @@ import PIL
 
 def get_random_dice_image():
     random_image = None
-
+ 
     # TODO Run the code and click the button. Notice that only 1 side of
     #  the die is shown.
 
