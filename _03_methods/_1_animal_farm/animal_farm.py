@@ -18,7 +18,18 @@ def animals():
 
     # TODO 3. If the user enters 'exit', stop the program
 
+    rand_num = simpledialog.askstring(title="TYPE an animal from below:", prompt="cat, cow, duck, llama, dog")
 
+    if rand_num == "cow":
+        moo()
+    elif rand_num == "dog":
+        woof()
+    elif rand_num == "duck":
+        quack()
+    elif rand_num == "cat":
+        meow()
+    elif rand_num == "llama":
+        llama_scream()
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
 def show_image(filename=None):
@@ -46,9 +57,8 @@ def show_image(filename=None):
 
 
 def moo():
-    show_image('cow.jpg')
     playsound('moo.wav')
-
+    show_image('cow.jpg')
 
 def quack():
     show_image('duck.jpg')
